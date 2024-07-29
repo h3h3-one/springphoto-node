@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    link(rel='stylesheet' href=' //springphoto.ru/stylesheets/login.css' type='text/css' media='all')
+    .login
+        .login-screen
+            .app-title
+                h1 Вход
+            .login-form
+                .control-group
+                    input.login-field#login-name(type='text', placeholder='Имя пользователя')
+                    label.login-field-icon.fui-user(for='login-name')
+                .control-group
+                    input.login-field#login-pass(type='password', placeholder='Пароль')
+                    label.login-field-icon.fui-lock(for='login-pass')
+                a.btn.btn-primary.btn-large.btn-block(href='') войти
+
+    script(src='//springphoto.ru/javascripts/auth.js')

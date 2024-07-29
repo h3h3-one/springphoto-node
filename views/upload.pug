@@ -1,0 +1,14 @@
+extends layout
+
+block content
+        if isAuthor   
+            link(rel='stylesheet' href=' //springphoto.ru/stylesheets/upload.css' type='text/css' media='all')
+            form(action="/upload" method="post" enctype="multipart/form-data")
+                input(type="file" name="cover")
+                br
+                input(type="file" name="album" multiple)
+                br
+                input.submit(type='submit', value='Добавить альбом')
+        else
+            h1="Not found"
+

@@ -1,0 +1,93 @@
+doctype html
+head
+
+  //  Yandex.Metrika counter
+  script(type='text/javascript').
+
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) {
+          return;
+        }
+      }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(96343733, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+
+  noscript <div><img src="https://mc.yandex.ru/watch/96343733" style="position:absolute; left:-9999px;" alt=""></div>
+  //  /Yandex.Metrika counter
+
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  meta(name='description', content='Меня зовут Александра Андриуца, и я профессиональный фотограф. На этом сайте вы найдете мои лучшие работы, которые отражают красоту окружающего мира. Если вы ищете талантливого фотографа для реализации ваших творческих идей, свяжитесь со мной, и мы обязательно обсудим условия сотрудничества.')
+  meta(name='author', content='Александра Андриуца')
+  title Александра Андриуца - фотограф Москва/Троицк
+  link(rel='stylesheet' href=' //springphoto.ru/stylesheets/woocommerce-layout.css' type='text/css' media='all')
+  link(rel='stylesheet' href=' //springphoto.ru/stylesheets/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)')
+  link(rel='stylesheet' href=' //springphoto.ru/stylesheets/woocommerce.css' type='text/css' media='all')
+  link(rel='stylesheet' href=' //springphoto.ru/stylesheets/font-awesome.min.css' type='text/css' media='all')
+  link(rel='stylesheet' href=' //springphoto.ru/stylesheets/style.css' type='text/css' media='all')
+  link(rel='stylesheet' href='//fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' type='text/css' media='all')
+  link(rel='stylesheet' href=' //springphoto.ru/stylesheets/easy-responsive-shortcodes.css' type='text/css' media='all')
+  link(rel='icon', href='//springphoto.ru/favicon.ico', type='image/x-icon')
+
+  body
+
+    #page
+      .container
+        header#masthead.site-header
+          .site-branding
+            h1.site-title
+              a(href='/', rel='home') Spring
+            h2.site-description Фотограф Москва/Троицк
+          nav#site-navigation.main-navigation
+            button.menu-toggle Меню
+            a.skip-link.screen-reader-text(href='#content') Пропустить
+            .menu-menu-1-container
+              ul#menu-menu-1.menu
+                li
+                  a(href='/') Главная
+                li
+                  a(href='/about') О себе
+                li
+                  a(href='/contacts') Контакты
+                if isAuthor
+                  li
+                    a(href='/upload') Добавить альбом
+        //  #masthead 
+        #content.site-content
+          #primary.content-area.column.full
+            main#main.site-main
+              block content
+                
+            //  #main 
+          //  #primary 
+        //  #content 
+      //  .container 
+      footer#colophon.site-footer
+        .container
+          .site-info
+            a(href='/login')
+              h1(style='font-family: \'Herr Von Muellerhoff\';color: #ccc;font-weight:300;text-align: center;margin-bottom:0;margin-top:0;line-height:1.4;font-size: 46px;').
+                Spring
+      a.smoothup(href='#top', title='Наверх')
+        span.genericon.genericon-collapse
+
+script(src='//springphoto.ru/javascripts/jquery.js')
+script(src='//springphoto.ru/javascripts/plugins.js')
+script(src='//springphoto.ru/javascripts/scripts.js')
+script(src='//springphoto.ru/javascripts/masonry.pkgd.min.js')
+
+if isAuthor
+  script(src='//springphoto.ru/javascripts/delete-album.js')

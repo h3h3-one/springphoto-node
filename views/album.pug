@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    //link(rel='stylesheet' href=' //springphoto.ru/stylesheets/album.css' type='text/css' media='all')
+    article.portfolio.hentry
+        header.entry-header
+            .entry-thumbnail
+                each albumItem in albums
+                    img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image(width='500' src='//springphoto.ru/../images/' + idAlbum + '/' + albumItem alt='p1')
+
+    //script(src='//springphoto.ru/javascripts/album.js')

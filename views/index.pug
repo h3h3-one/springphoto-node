@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .grid.portfoliogrid
+    each album in albums
+      article.hentry
+        header.entry-header
+          .entry-thumbnail
+            a(href='/album/' + album)
+              img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image(src='//springphoto.ru/images/' + album + '/cover/cover.jpg', alt='p1')
+            if isAuthor
+              button.delete-album(type="button" value=album) Удалить

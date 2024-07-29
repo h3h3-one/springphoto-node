@@ -1,0 +1,20 @@
+# npm
+node_modules
+package-lock.json
+*.log
+*.gz
+
+# Coveralls
+.nyc_output
+coverage
+
+# Benchmarking
+benchmarks/graphs
+
+TICKET.txt
+html_template/HTML-Moschino1.0.0
+.vscode
+.idea
+
+# ignore additional files using core.excludesFile
+# http://git-scm.com/docs/gitignore

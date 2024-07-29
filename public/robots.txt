@@ -1,0 +1,5 @@
+User-agent: *
+Crawl-delay: 1
+Host: springphoto.ru
+Disallow: /login
+Sitemap: https://springphoto.ru/sitemap.xml
